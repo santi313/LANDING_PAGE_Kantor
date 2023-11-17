@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* jumbotron */
+.banner {
+  background: url("img/banner.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  text-shadow: 1px 2px 3px rgba(1, 1, 3, 0.5);
+}
+
+.banner p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-shadow: 1px 2px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* program */
+#program h1 {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+#program h3 {
+  margin-top: -1rem;
+  padding: 0.5rem 0;
+}
+
+#program .lingkaran {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  color: white;
+}
+
+/* about */
+#about h1 {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+#about .card-img-top {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(0, 206, 206);
+}
+
+.slide-content {
+  overflow: hidden;
+}
+
+.swiper-btn:hover {
+  transform: scale(1.2);
+}
+
+.swiper-btn:active {
+  color: aqua;
+}
+
+.pagination-btn {
+  margin-top: 2rem;
+}
+
+/* contact */
+#contact h1 {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+#contact .map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-btn {
+    display: none;
+  }
+}
+
+/* footer */
+footer a {
+  text-decoration: none;
+}
+
+footer .socials {
+  padding: 1rem 3rem;
+}
+
+footer .socials a {
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: black;
+}
+
+footer .links {
+  margin-bottom: 1rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+/* floating sosmed */
+.medsos {
+  position: fixed;
+  left: 1rem;
+  bottom: 1.5rem;
+  z-index: 9999;
+}
+
+.medsos a {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.medsos a .btn-floating-wa,
+.medsos a .btn-floating-ig {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+.medsos a span {
+  display: none;
+  flex-direction: row;
+}
+
+.medsos a:hover span {
+  display: inline-block;
+  padding: 0 0.8rem;
+  line-height: 1.35rem;
+}
+
+.medsos a:hover .btn-floating-wa {
+  background-color: rgba(0, 128, 0, 1);
+}
+
+.medsos a:hover .btn-floating-ig {
+  background-color: rgba(171, 80, 247, 1);
+}

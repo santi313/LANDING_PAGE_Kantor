@@ -1,0 +1,244 @@
+/* TABLET ke LAPTOP */
+@media (min-width: 425px) {
+  .program .contoh .video,
+  .program .contoh .gambar {
+    height: 200px;
+  }
+}
+@media (min-width: 500px) {
+  .program .contoh .video,
+  .program .contoh .gambar {
+    width: 50%;
+    height: 170px;
+  }
+}
+@media (min-width: 768px) {
+  .program .contoh .video,
+  .program .contoh .gambar {
+    height: 200px;
+  }
+}
+@media (min-width: 850px) {
+  /* navbar */
+  .menu-nav .navbar-brand img {
+    width: 180px;
+    margin-left: 30px;
+  }
+  .menu-nav .nav-link {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .menu-nav ul {
+    margin-right: 30px;
+  }
+  /* jumbotron */
+  .banner .teks h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .banner .teks p,
+  .banner .teks a {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .banner .teks .btn {
+    font-size: 22px;
+  }
+  .banner .teks {
+    margin: 0px 30px;
+  }
+  /* bag 2,3,4,5 */
+  .bag2 p {
+    font-size: 20px;
+  }
+  .bag3 h4,
+  .bag4 h4,
+  .testi h4 {
+    font-size: 30px;
+  }
+  .bag3 .accordion-button {
+    font-size: 20px;
+  }
+  .bag3 .accordion-body {
+    font-size: 18px;
+  }
+  .bag4 .item {
+    font-size: 18px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  .bag4 .item img {
+    width: 85px;
+  }
+  .alert {
+    font-size: 20px;
+  }
+  .bag5 h4 {
+    font-size: 35px;
+    width: 140px;
+    height: 140px;
+    padding-top: 15px;
+  }
+  .bag5 .item p {
+    font-size: 18px;
+  }
+  /* program */
+  .program h4 {
+    font-size: 30px;
+  }
+  .program label,
+  .program .ket,
+  .program button {
+    font-size: 18px;
+  }
+  .program .judul {
+    font-size: 20px;
+  }
+  .program .contoh .video,
+  .program .contoh .gambar {
+    height: 250px;
+  }
+  /* testimoni */
+  .testiBox p {
+    font-size: 18px;
+  }
+  .testiBox .detail h3 {
+    font-size: 18px;
+  }
+  .testiBox .detail span {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  /* bag 3 */
+  .bag3 {
+    width: 80vw;
+    margin: auto !important;
+    margin-top: 3rem !important;
+  }
+  /* program */
+  .program .detail {
+    display: flex;
+    align-items: center;
+  }
+  .program .contoh {
+    width: 65%;
+  }
+  .program .ket {
+    width: 35%;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .program .contoh .video,
+  .program .contoh .gambar {
+    height: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  /* program */
+  .program .carousel-inner {
+    width: 80vw;
+    margin: auto;
+  }
+}
+/* LAPTOP BESAR */
+@media (min-width: 1700px) {
+  /* navbar */
+  .menu-nav .navbar-brand img {
+    width: 200px;
+  }
+  .menu-nav .nav-link {
+    font-size: 23px;
+  }
+  /* jumbotron */
+  .banner .teks {
+    width: 70vw;
+  }
+  .banner .teks h1 {
+    font-size: 55px;
+  }
+  .banner .teks p,
+  .banner .teks a {
+    font-size: 25px;
+  }
+  .banner .teks .btn {
+    font-size: 27px;
+  }
+  /* bag 2,3,4,5 */
+  .bag2 p {
+    font-size: 23px;
+  }
+  .bag3 h4,
+  .bag4 h4 {
+    font-size: 35px;
+  }
+  .bag3 .accordion-button {
+    font-size: 25px;
+  }
+  .bag3 .accordion-body {
+    font-size: 23px;
+  }
+  .alert {
+    font-size: 23px;
+  }
+  .bag3 {
+    width: 70vw;
+  }
+  .bag4 .item {
+    font-size: 23px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  .bag4 .item img {
+    width: 100px;
+  }
+  .bag4 .teks {
+    margin-bottom: 50px;
+  }
+  .bag5 h4 {
+    font-size: 38px;
+  }
+  .bag5 .item p {
+    font-size: 23px;
+  }
+  .bag5 .item {
+    width: 400px;
+  }
+  .bag5 .teks img {
+    width: 80px;
+    height: 80px;
+  }
+  .bag5 .item p {
+    margin-left: 70px;
+  }
+  /* program */
+  .program h4 {
+    font-size: 38px;
+  }
+  .program label,
+  .program .ket,
+  .program button {
+    font-size: 23px;
+  }
+  .program .judul {
+    font-size: 25px;
+  }
+  /* testimoni */
+  .testi h4 {
+    font-size: 38px;
+  }
+  .testiBox p {
+    font-size: 23px;
+  }
+  .testiBox .detail h3 {
+    font-size: 23px;
+  }
+  .testiBox .detail span {
+    font-size: 19px;
+  }
+  swiper-slide {
+    width: 400px;
+  }
+}

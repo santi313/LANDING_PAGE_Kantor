@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dennys Coding Course</title>
+    <link rel="icon" href="img/ikon.png" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- bagian navbar -->
+    <nav class="menu-nav navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="DCC Logo" width="150" />
+        </a>
+        <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#studentProject">Student Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bagian jumbotron -->
+    <section id="home">
+      <div class="banner d-flex align-items-center">
+        <div class="teks container-fluid">
+          <h1>Gali potensi codingmu, Ukir masa depanmu</h1>
+          <p>
+            Dennys Coding Course atau DCC adalah kursus coding anak yang berfokus pada project based learning.
+            <span class="collapse" id="teksMore"> Program disesuaikan untuk mengasah hardskill dan memperkuat softskill anak. </span>
+          </p>
+
+          <p>
+            <a data-bs-toggle="collapse" href="#teksMore" role="button" aria-expanded="false" aria-controls="teksMore">Read more... </a>
+          </p>
+
+          <!-- Button trigger modal trial class -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian posisi 2 -->
+    <section>
+      <div class="bag2 card text-center mt-5 mx-2">
+        <div class="card-body">
+          <p>
+            Sudah Berdiri selama
+            <span id="tahun" class="fs-1 text-primary">0</span> Tahun, Memiliki <span class="fs-1 text-primary">100+</span> Siswa dan <span class="fs-1 text-primary">10+</span> kursus
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian posisi 3 -->
+    <section>
+      <div class="bag3 mt-5 mx-2">
+        <h4 class="text-center mb-3 text-primary">Mengapa Belajar Coding?</h4>
+        <div class="accordion" id="whycoding">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#why1" aria-expanded="false" aria-controls="why1">Bahasa Masa Depan</button>
+            </h2>
+            <div id="why1" class="accordion-collapse collapse show">
+              <div class="accordion-body text-center">Coding akan menjadi bahasa di abad-21, hingga 2030 jutaan programmer akan dibutuhkan untuk memecahkan permasalahan IT, digital dan ekonomi.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#why3" aria-expanded="false" aria-controls="why3">Lebih Banyak Kesempatan Karier</button>
+            </h2>
+            <div id="why3" class="accordion-collapse collapse show">
+              <div class="accordion-body text-center">Bahasa coding akan penting karena di masa depan akan banyak jenis pekerjaan baru yang membutuhkan keahlian bahasa coding.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#why2" aria-expanded="false" aria-controls="why2">Mengasah Berbagai Potensi Keterampilan</button>
+            </h2>
+            <div id="why2" class="accordion-collapse collapse show">
+              <div class="accordion-body text-center">Belajar coding akan membantu anak mengasah berbagai softskill yang berguna bagi kehidupan sehari-hari dan meningkatkan kepercayaan diri.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian posisi 4 -->
+    <section>
+      <div class="bag4 container-fluid mt-5">
+        <h4 class="text-center mb-3 text-primary">Manfaat Belajar Coding</h4>
+        <div class="teks d-flex flex-wrap justify-content-around align-items-center text-center">
+          <div class="item">
+            <img src="img/orang1.png" />
+            <p>Melatih berpikir sistematis</p>
+          </div>
+          <div class="item">
+            <img src="img/orang2.png" />
+            <p>Menumbuhkan Inovasi</p>
+          </div>
+          <div class="item">
+            <img src="img/orang4.png" />
+            <p>Mengasah kreativitas</p>
+          </div>
+          <div class="item">
+            <img src="img/orang3.png" />
+            <p>Melatih Logika & Problem Solving</p>
+          </div>
+          <div class="item">
+            <img src="img/orang1.png" />
+            <p>Meningkatkan kepercayaan diri</p>
+          </div>
+          <div class="item">
+            <img src="img/orang2.png" />
+            <p>Bekal menghadapi challenge di masa depan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian posisi 5 -->
+    <section>
+      <div class="bag5 container-fluid mt-5">
+        <h4 class="text-center mb-3 text-primary">WHY US?</h4>
+        <div class="teks d-flex flex-wrap justify-content-around">
+          <div class="item">
+            <img src="img/kids.jpg" />
+            <p>Kurikulum Terpersonalisasi dan Berbasis Project</p>
+          </div>
+          <div class="item">
+            <img src="img/kids.jpg" />
+            <p>Pathway yang jelas & banyak pilihan kelas sesuai minat anak</p>
+          </div>
+          <div class="item">
+            <img src="img/kids.jpg" />
+            <p>Menggunakan berbagai tools untuk menciptakan suasana belajar aktif dan menyenagkan</p>
+          </div>
+          <div class="item">
+            <img src="img/kids.jpg" />
+            <p>Mengkomunikasikan dan mencatat perkembangan anak di setiap akhir pembelajaran</p>
+          </div>
+          <div class="item">
+            <img src="img/kids.jpg" />
+            <p>Privat 1 on 1 pada kelas online Semi privat pada kelas onsite (maksimal 3 anak dalam 1 kelas)</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert mt-5 mx-2 text-center" role="alert">
+        Ada pertanyaan lebih lanjut? Tanya
+        <a href="#" class="pe-auto">disini</a>.
+      </div>
+    </section>
+
+    <!-- bagian program posisi 6 -->
+    <section id="program" class="pt-5">
+      <div class="program container-fluid">
+        <h4 class="text-center mt-5 mb-3 pt-3 text-primary">Program DCC</h4>
+        <div class="level text-center">
+          <div class="btn-group gap-2" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="level" id="level1" autocomplete="off" checked />
+            <label class="btn btn-outline-primary" for="level1" onclick="program('basic')">Basic</label>
+
+            <input type="radio" class="btn-check" name="level" id="level2" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="level2" onclick="program('intermediate')">Intermediate</label>
+
+            <input type="radio" class="btn-check" name="level" id="level3" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="level3" onclick="program('advance')">Advance</label>
+          </div>
+        </div>
+
+        <div class="class mt-2 text-center" id="class"></div>
+
+        <div class="collapse" id="basic">
+          <div id="slideBasic" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slideBasic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slideBasic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner bg-white rounded">
+              <div class="carousel-item active">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Basic 1</span>
+                  <span>5 - 9 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">Memperkenalkan konsep-konsep dasar programming melalui drag and drop programming yang dikemas dalam 3 materi yang menarik. Seperti Coding Games, animasi interaktif dan story board. Program ini dibuat khusus agar menumbuhkan kreativitas, kepercayaan diri dan keterampilan kolaboratif anak. <a href="#qb1" data-bs-toggle="modal" data-bs-target="#qb1">More...</a></div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/basic1.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qb1" tabindex="-1" aria-labelledby="qb1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qb1Label">Quotation Basic 1</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Basic I.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Basic 2</span>
+                  <span>8 - 10 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">Memperkenalkan programming yang lebih kompleks melalui dua materi yang menarik. Pertama, Coding Games akan memperkenalkan konsep-konsep seperti programming text-based, perulangan bersarang, dan kondisi bersarang. Selanjutnya, melalui materi Simple Game, mereka akan mempraktikkan konsep-konsep tersebut dengan membuat game sederhana. <a href="#qb2" data-bs-toggle="modal" data-bs-target="#qb2">More...</a></div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/basic2.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qb2" tabindex="-1" aria-labelledby="qb2Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qb2Label">Quotation Basic 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Basic II.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse" id="intermediate">
+          <div id="slideIntermediate" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slideIntermediate" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slideIntermediate" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slideIntermediate" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#slideIntermediate" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#slideIntermediate" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner bg-white rounded">
+              <div class="carousel-item active">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Game Dev.</span>
+                  <span>8 - 14 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Selamat datang di kelas Game! Sebuah penerapan konsep-konsep programming dan menghubungkannya dengan ilmu matematika yang erat, seperti sumbu XY, sudut, dan jarak. Metode dibuat untuk mendorong kreativitas anak-anak dengan membuat karakter, latar belakang, dan suara game mereka sendiri. Pada akhirnya, mereka akan mampu menciptakan game sederhana yang menakjubkan. Selamat berpetualang di dunia game programming!
+                    <a href="#qi1" data-bs-toggle="modal" data-bs-target="#qi1">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/gamedev.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qi1" tabindex="-1" aria-labelledby="qi1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qi1Label">Quotation Game Develompent</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Inter. Game.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>3D Game</span>
+                  <span>9 - 14 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Di kelas ini, anak akan membuat aturan dan kondisi dalam permainan, menciptakan klon karakter, menguasai multitasking, memanfaatkan tombol keyboard, dan masih banyak lagi. Hasil akhirnya adalah mereka akan menciptakan game 3D sederhana yang mereka sendiri buat. Mereka akan belajar membuat peta 3D yang menakjubkan, mengendalikan karakter bergerak dengan mengoding, dan memahami sudut pandang dalam permainan. Mereka juga akan mengenal dasar-dasar pemrograman dalam game dengan
+                    tampilan 3D. <a href="#qi2" data-bs-toggle="modal" data-bs-target="#qi2">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/3d.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qi2" tabindex="-1" aria-labelledby="qi2Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qi2Label">Quotation 3D Game</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Inter. 3D Game.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Android</span>
+                  <span>11 - 15 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">Dalam kelas Android, anak-anak akan mengeksplorasi dunia kreatif pembuatan aplikasi mobile untuk smartphone Android. Mereka akan menggali rahasia sequence, looping, function, dan condition dalam pemrograman mobile yang berbeda dari yang lain. Semua ini akan diajarkan dengan metode coding puzzle yang menarik. Hasilnya? Mereka akan mampu membuat aplikasi seperti pada Android. <a href="#qi3" data-bs-toggle="modal" data-bs-target="#qi3">More...</a></div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/android.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qi3" tabindex="-1" aria-labelledby="qi3Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qi3Label">Quotation Android</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Inter. Android.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Robotic 1</span>
+                  <span>> 8 Tahun</span>
+                  <span>Onsite Only</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Di kelas ini anak akan belajar merakit robot, mengenali bagian mekanik, dan mempelajari sensor serta pemrograman robotic. Mereka akan belajar bagaimana mengendalikan robot, menggabungkan sensor dengan mesin, dan masih banyak lagi. Semua ini akan digerakan dengan menyusun coding puzzle sebagai instruksinya, sebuah pembelajaran yang seru dan interaktif. Bersiaplah untuk merakit robot-robot yang menakjubkan! <a href="#qi4" data-bs-toggle="modal" data-bs-target="#qi4">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/robotic1.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qi4" tabindex="-1" aria-labelledby="qi4Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qi4Label">Quotation Robotic 1</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Inter. Robotik I.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Technic</span>
+                  <span>> 9 Tahun</span>
+                  <span>Onsite Only</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Belajar tentang desain technic yang mirip dengan alat-alat sehari-hari dan industri. Mereka juga akan mempelajari konsep fisika sederhana sehingga bisa memahami faktor-faktor yang mempengaruhi kerja alat-alat tersebut. Metodenya seru, yaitu dengan merancang dan membuat miniatur alat yang digunakan dalam kehidupan sehari-hari dan industri. Hasilnya? Mereka akan menciptakan proyek miniatur alat yang keren, menggunakan Lego technic dan sistem pneumatik yang menarik!
+                    <a href="#qi5" data-bs-toggle="modal" data-bs-target="#qi5">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/technic.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qi5" tabindex="-1" aria-labelledby="qi5Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qi5Label">Quotation Technic</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Inter. Technic.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse" id="advance">
+          <div id="slideAdvance" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#slideAdvance" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner bg-white rounded">
+              <div class="carousel-item active">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Website 1</span>
+                  <span>> 13 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Di sini, anak-anak akan belajar menuyusun coding dengan teks (format coding umum). Mereka akan belajar mengetik kode-kode program secara manual dan mengenal istilah-istilah penting dalam pembuatan program. Bahasa pemrograman yang akan dipelajari adalah HTML (Hypertext Markup Language) dan CSS (Cascading Style Sheets). Dan yang pasti, di akhir kelas, mereka akan bisa membuat artikel atau profil diri secara online yang keren dan menarik!
+                    <a href="#qa1" data-bs-toggle="modal" data-bs-target="#qa1">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/web1.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa1" tabindex="-1" aria-labelledby="qa1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa1Label">Quotation Website 1</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Website I.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Website 2</span>
+                  <span>> 13 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Pada kelas ini anak-anak akan memasuki dunia logika pemrograman pada website. Mereka akan belajar tentang urutan, kondisi, percabangan, pengulangan, fungsi, variabel, array, event, dan masih banyak lagi. Semua ini akan dipelajari dengan bahasa pemrograman JS (Java Script). Dan yang menariknya, mereka akan mampu membuat sistem sederhana menggunakan platform website yang keren dan berguna! <a href="#qa2" data-bs-toggle="modal" data-bs-target="#qa2">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/web2.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa2" tabindex="-1" aria-labelledby="qa2Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa2Label">Quotation Website 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Website II.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Website 3</span>
+                  <span>> 13 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Pada kelas ini anak-anak akan memasuki dunia logika pemrograman pada website. Mereka akan belajar tentang urutan, kondisi, percabangan, pengulangan, fungsi, variabel, array, event, dan masih banyak lagi. Semua ini akan dipelajari dengan bahasa pemrograman JS (Java Script). Dan yang menariknya, mereka akan mampu membuat sistem sederhana menggunakan platform website yang keren dan berguna! <a href="#qa3" data-bs-toggle="modal" data-bs-target="#qa3">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/web2.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa3" tabindex="-1" aria-labelledby="qa3Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa3Label">Quotation Website 3</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Website II.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Python</span>
+                  <span>> 8 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam unde nostrum doloremque maxime facilis, alias architecto excepturi velit sit repudiandae temporibus similique veritatis quaerat quis? Nisi recusandae id soluta consequuntur magni distinctio vero et atque? Nihil exercitationem ab tenetur consequuntur nostrum est sequi omnis nam, repellendus a vel doloribus fuga. <a href="#qa4" data-bs-toggle="modal" data-bs-target="#qa4">More...</a></div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/python.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa4" tabindex="-1" aria-labelledby="qa4Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa4Label">Quotation Coding Python</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Software Development.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Minecraft</span>
+                  <span>> 13 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">
+                    Selamat datang di kelas Modding! Di sini, anak-anak akan belajar menganalisis dan memodifikasi game Minecraft dengan cara yang seru dan menarik. Mereka akan memahami alur game, membaca dan mengenali fungsi programnya, dan kemudian menggunakan kreativitas mereka untuk mengubah dan menambahkan program sehingga menciptakan game baru yang unik. Metodenya adalah dengan memodifikasi program yang sudah ada. Sehingga mereka akan menciptakan game Minecraft yang sesuai dengan imajinasi
+                    dan kreativitas mereka sendiri, menggunakan software Minecraft Education yang keren! <a href="#qa5" data-bs-toggle="modal" data-bs-target="#qa5">More...</a>
+                  </div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/minecraft.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa5" tabindex="-1" aria-labelledby="qa5Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa5Label">Quotation Minecraft</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Modding Minecraft.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="judul d-flex flex-wrap justify-content-center align-items-center">
+                  <span>Roblox</span>
+                  <span>> 13 Tahun</span>
+                  <span>Online | Onsite</span>
+                </div>
+                <div class="detail">
+                  <div class="ket my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nulla consequatur unde! Unde quasi repudiandae nam, ratione suscipit minima nobis, optio laudantium iste placeat eos, quos deleniti enim alias dolore praesentium! Obcaecati aliquid voluptatum quas, dolore eos ea dolores aperiam incidunt maxime odit veritatis perspiciatis necessitatibus, sed molestias porro commodi? <a href="#qa6" data-bs-toggle="modal" data-bs-target="#qa6">More...</a></div>
+                  <div class="contoh my-3 d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="video my-1">
+                      <iframe src="video/roblox.mp4"></iframe>
+                    </div>
+                    <div class="gambar my-1 overflow-y-scroll d-flex flex-column">
+                      <img src="img/banner.jpg" />
+                      <img src="img/kids.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#formTrial">Coba Kelas Gratis</button>
+                <!-- modal quotation -->
+                <div class="modal fade" id="qa6" tabindex="-1" aria-labelledby="qa6Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="qa6Label">Quotation Roblox</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body"><img src="img/Adv. Modding Roblox.png" /></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian posisi 7 -->
+    <section>
+      <div class="alert mt-5 mx-2 text-center d-flex justify-content-around align-items-center flex-wrap" role="alert">
+        Belum tau mulai darimana?
+        <a href="#" class="pe-auto">Coba dulu kelas gratis & diskusikan dengan kami.</a>
+      </div>
+    </section>
+
+    <!-- bagian student project -->
+    <section id="studentProject" class="pt-5">
+      <div class="project container-fluid">
+        <h4 class="text-center mt-5 mb-3 pt-3 text-primary">Student Project</h4>
+      </div>
+    </section>
+
+    <!-- bagian testimoni posisi 8 -->
+    <section id="testimoni">
+      <div class="testi container mt-5">
+        <h4 class="text-center text-primary">Testimonials</h4>
+        <swiper-container class="mySwiper" navigation="true" pagination="true" effect="coverflow" grab-cursor="true" loop="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" autoplay-delay="5000" autoplay-disable-on-interaction="false">
+          <swiper-slide>
+            <div class="testiBox">
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit voluptatum similique in, quaerat blanditiis animi harum aut ad ratione?</p>
+                <div class="detail">
+                  <div class="imgBox">
+                    <img src="img/orang1.png" />
+                  </div>
+                  <h3>
+                    Testi1 <br />
+                    <span>Parent/Student</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="testiBox">
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit voluptatum similique in, quaerat blanditiis animi harum aut ad ratione?</p>
+                <div class="detail">
+                  <div class="imgBox">
+                    <img src="img/orang2.png" />
+                  </div>
+                  <h3>
+                    Testi2 <br />
+                    <span>Parent/Student</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="testiBox">
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit voluptatum similique in, quaerat blanditiis animi harum aut ad ratione?</p>
+                <div class="detail">
+                  <div class="imgBox">
+                    <img src="img/orang3.png" />
+                  </div>
+                  <h3>
+                    Testi3 <br />
+                    <span>Parent/Student</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="testiBox">
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit voluptatum similique in, quaerat blanditiis animi harum aut ad ratione?</p>
+                <div class="detail">
+                  <div class="imgBox">
+                    <img src="img/orang4.png" />
+                  </div>
+                  <h3>
+                    Testi4 <br />
+                    <span>Parent/Student</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="testiBox">
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit voluptatum similique in, quaerat blanditiis animi harum aut ad ratione?</p>
+                <div class="detail">
+                  <div class="imgBox">
+                    <img src="img/kids.jpg" />
+                  </div>
+                  <h3>
+                    Testi5 <br />
+                    <span>Parent/Student</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+
+    <!-- bagian faq posisi 9 -->
+    <section>
+      <div class="container-fluid mt-5 bg-info-subtle pb-5 pt-2">
+        <h1 class="text-center">FAQ</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Anak saya belum pernah belajar coding, apakah dapat mengikuti kelas ini?</button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-4">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Dapatkah saya memilih jadwal kelas?</button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-4">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Saya tidak tahu kelas yang sesuai bagi anak saya</button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-4">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Bahasa pengantar apa yang digunakan di DCC?</button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-4">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian footer -->
+    <footer class="bg-info text-center py-1 mt-5">
+      <div class="socials">
+        <a href="https://www.instagram.com/dennyscodingcourse/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+        <a href="https://wa.me/6283851744849/?text=Halo DCC, saya ingin konsultasi" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="links fw-semibold">
+        <a href="#home">Home</a>
+        <a href="#program">Program</a>
+        <a href="#studentProject">Student Project</a>
+        <a href="aboutUs.html">About Us</a>
+      </div>
+      <div class="credit fw-semibold">
+        <p>Created by <a href="#">santi</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <!-- bagian wa dan ig floating -->
+    <section>
+      <div class="medsos d-flex flex-column">
+        <a href="https://wa.me/6283851744849/?text=Halo DCC, saya ingin konsultasi" target="_blank">
+          <button class="btn-floating-wa d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              />
+            </svg>
+            <span>WhatsApp</span>
+          </button>
+        </a>
+        <a href="https://www.instagram.com/dennyscodingcourse/" target="_blank">
+          <button class="btn-floating-ig d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+            <span>Instagram</span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Modal trial class -->
+    <div class="modal fade" id="formTrial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="formTrialLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fw-bold" id="formTrialLabel">Formulir Coba Kelas Gratis</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="namaAnak" placeholder="" />
+              <label for="namaAnak">Nama Anak</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="usia" placeholder="" />
+              <label for="usia">Usia Anak</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="namaOrtu" placeholder="" />
+              <label for="namaOrtu">Nama Orang Tua</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="noHp" placeholder="" />
+              <label for="noHp">No. HP Orang Tua</label>
+            </div>
+            <p style="font-size: 12px; margin-left: 5px; margin-top: -15px; font-style: italic">awali nomor dengan angka 0</p>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="" />
+              <label for="email">Email Aktif</label>
+            </div>
+            <p style="font-size: 12px; margin-left: 5px; margin-top: -15px; font-style: italic">dibutuhkan untuk konfirmasi</p>
+            <input type="checkbox" id="setuju" />
+            <label for="setuju" style="font-size: 14px"><b>Saya setuju untuk mengikuti kebijakan privasi</b></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" onclick="waTrialClass()">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstarp js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- my js -->
+    <script src="script.js"></script>
+
+    <script>
+      // SELISIH WAKTU BERDIRI
+      // dcc berdiri 20.06.20
+      const tanggalBerdiri = new Date(2020, 5, 20);
+      const tanggalSekarang = new Date();
+
+      tanggalBerdiri.setHours(0, 0, 0, 0);
+      tanggalSekarang.setHours(0, 0, 0, 0);
+
+      const selisih = tanggalSekarang - tanggalBerdiri;
+      const hariDalamMS = 1000 * 60 * 60 * 24;
+      const selisihTanggal = selisih / hariDalamMS;
+      const selisihTahun = Math.round(selisihTanggal / 365);
+
+      const isiTahun = document.getElementById("tahun");
+      isiTahun.innerHTML = selisihTahun;
+
+      program("basic");
+    </script>
+  </body>
+</html>
