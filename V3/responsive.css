@@ -1,21 +1,29 @@
 /* TABLET ke LAPTOP */
 @media (min-width: 425px) {
-  .program .contoh .video,
-  .program .contoh .gambar {
-    height: 200px;
+  /* program */
+  .program .contoh .gambar,
+  .program .contoh video {
+    width: 70vw;
+    height: calc(0.5625 * 70vw);
   }
 }
 @media (min-width: 500px) {
-  .program .contoh .video,
-  .program .contoh .gambar {
-    width: 50%;
-    height: 170px;
+  /* program */
+  .program .contoh .gambar,
+  .program .contoh video {
+    width: 60vw;
+    height: calc(0.5625 * 60vw);
   }
 }
-@media (min-width: 768px) {
-  .program .contoh .video,
-  .program .contoh .gambar {
-    height: 200px;
+@media (min-width: 700px) {
+  .program .contoh .gambar,
+  .program .contoh video {
+    width: 40vw;
+    height: calc(0.5625 * 40vw);
+  }
+  .program .contoh {
+    width: 90vw;
+    display: flex;
   }
 }
 @media (min-width: 850px) {
@@ -95,10 +103,6 @@
   .program .judul {
     font-size: 20px;
   }
-  .program .contoh .video,
-  .program .contoh .gambar {
-    height: 250px;
-  }
   /* testimoni */
   .testiBox p {
     font-size: 18px;
@@ -118,28 +122,39 @@
     margin-top: 3rem !important;
   }
   /* program */
-  .program .detail {
-    display: flex;
-    align-items: center;
+  .program .contoh .gambar,
+  .program .contoh video {
+    width: 30vw;
+    height: calc(0.5625 * 30vw);
   }
+  .program .ket,
   .program .contoh {
-    width: 65%;
-  }
-  .program .ket {
-    width: 35%;
-    height: 300px;
-    overflow-y: scroll;
-  }
-  .program .contoh .video,
-  .program .contoh .gambar {
-    height: 300px;
+    width: 80vw;
   }
 }
 @media (min-width: 1440px) {
   /* program */
-  .program .carousel-inner {
+  /* .program .carousel-inner {
     width: 80vw;
     margin: auto;
+  } */
+  .program .contoh .gambar,
+  .program .contoh video {
+    width: 25vw;
+    height: calc(0.5625 * 25vw);
+  }
+  .program .ket {
+    width: 40vw;
+    height: calc(0.5625 * 30vw);
+    overflow-y: scroll;
+    padding-left: 20px;
+  }
+  .program .contoh {
+    width: 60vw;
+  }
+  .program .detail {
+    display: flex;
+    align-items: flex-start;
   }
 }
 /* LAPTOP BESAR */

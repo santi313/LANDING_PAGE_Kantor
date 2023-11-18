@@ -236,16 +236,19 @@ html {
   width: 90vw;
   margin: auto;
 }
-.program .contoh img,
-.program .contoh iframe {
+.program .contoh .gambar,
+.program .contoh video {
+  width: 80vw;
+  height: calc(0.5625 * 80vw);
+  background-color: aqua;
+}
+.program .contoh video {
+  border: 2px solid white;
+}
+.program .contoh img {
   width: 100%;
   height: 100%;
   border: 2px solid white;
-}
-.program .contoh .video,
-.program .contoh .gambar {
-  width: 100%;
-  height: 150px;
 }
 ::-webkit-scrollbar {
   width: 8px;
