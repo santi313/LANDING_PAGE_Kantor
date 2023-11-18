@@ -240,7 +240,6 @@ html {
 .program .contoh video {
   width: 80vw;
   height: calc(0.5625 * 80vw);
-  background-color: aqua;
 }
 .program .contoh video {
   border: 2px solid white;
