@@ -103,6 +103,10 @@ html {
   padding: 10px 15px;
   background-color: #08b4ce;
 }
+.bag3 .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
 .bag3 .accordion-body {
   font-size: 15px;
   padding: 5px;
@@ -186,7 +190,6 @@ html {
   text-shadow: 1px 1px 1px #0096a6;
 }
 .program label,
-.program button,
 .program button {
   font-size: 15px;
 }
@@ -216,13 +219,30 @@ html {
 }
 .program .carousel-indicators [data-bs-target] {
   background-color: #0d6efd;
-  height: 15px;
-  width: 50px;
+  height: fit-content;
+  width: fit-content;
+  text-indent: 0;
+  transition: none;
+  padding: 3px 10px;
+  color: white;
+  border: none;
+  margin-bottom: 8px;
 }
 .program .carousel-indicators {
   z-index: 0;
   position: static;
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  margin: auto;
+}
+.program .carousel-indicators button {
+  font-size: 13px;
+}
+.program .carousel-item {
+  transition: none;
 }
 .program .modal-body img {
   width: 100%;
@@ -247,7 +267,8 @@ html {
 .program .contoh img {
   width: 100%;
   height: 100%;
-  border: 2px solid white;
+  border: 2px solid #08b4ce;
+  box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -263,12 +284,43 @@ html {
 .project {
   background: linear-gradient(white, #fbc9252a);
   border-radius: 30px;
-  height: 500px;
+  padding-bottom: 25px;
+}
+.project .contoh {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 15px;
+}
+.project h5 {
+  font-size: 18px;
+  color: #08b4ce;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.project .contoh .nama {
+  font-size: 16px;
+}
+.project .contoh video {
+  width: 80vw;
+  height: calc(0.5625 * 80vw);
+}
+.project .carousel-control-next {
+  right: -20px;
+  top: -100px;
+}
+.project .carousel-control-prev {
+  left: -20px;
+  top: -100px;
 }
 /* testimoni */
 swiper-container {
   width: 100%;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 swiper-slide {
@@ -307,7 +359,7 @@ swiper-slide img {
 .testiBox .detail h3 {
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.1em;
   color: #2196f3;
   margin-left: 20px;
@@ -332,4 +384,90 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* faq */
+.faq h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.faq .accordion-button {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  background-color: aliceblue;
+}
+.faq .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.faq .accordion-button:not(.collapsed) {
+  background-color: #08b4ceb0;
+}
+.faq .accordion-body {
+  font-size: 15px;
+  background-color: rgb(229, 248, 255);
+  padding: 5px;
+}
+/* footer */
+.footer {
+  background-color: #08b4ce;
+}
+.footer .socials svg {
+  margin: 5px 10px;
+}
+.footer .socials svg:hover {
+  fill: black;
+}
+.footer .links a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  margin: 0 2px;
+}
+.footer .links a:hover {
+  color: black;
+}
+.footer .credit {
+  font-size: 12px;
+}
+.footer .credit a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+/* floating sosmed */
+.medsos {
+  position: fixed;
+  left: 1rem;
+  bottom: 1.5rem;
+  z-index: 1000;
+}
+.medsos a {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.medsos a .btn-floating-wa,
+.medsos a .btn-floating-ig {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+.medsos a span {
+  display: none;
+  flex-direction: row;
+}
+.medsos a:hover span {
+  display: inline-block;
+  padding: 0 0.8rem;
+  line-height: 1.35rem;
+}
+.medsos a:hover .btn-floating-wa {
+  background: linear-gradient(to right, #075e54, #25d366);
+}
+.medsos a:hover .btn-floating-ig {
+  background: linear-gradient(to right, #833ab4, #c13584);
 }

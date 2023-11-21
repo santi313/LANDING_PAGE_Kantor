@@ -2,28 +2,49 @@
 @media (min-width: 425px) {
   /* program */
   .program .contoh .gambar,
-  .program .contoh video {
+  .program .contoh video,
+  .project .contoh video {
     width: 70vw;
     height: calc(0.5625 * 70vw);
+  }
+  /* footer */
+  .footer .links a {
+    margin: 0 10px;
   }
 }
 @media (min-width: 500px) {
   /* program */
   .program .contoh .gambar,
-  .program .contoh video {
+  .program .contoh video,
+  .project .contoh video {
     width: 60vw;
     height: calc(0.5625 * 60vw);
   }
 }
 @media (min-width: 700px) {
+  /* program */
   .program .contoh .gambar,
-  .program .contoh video {
+  .program .contoh video,
+  .project .contoh video {
     width: 40vw;
     height: calc(0.5625 * 40vw);
   }
   .program .contoh {
     width: 90vw;
     display: flex;
+  }
+  /* project */
+  .project .kategori {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .project .kategori .class {
+    width: 45vw;
+  }
+  /* footer */
+  .footer .links a {
+    margin: 0 15px;
   }
 }
 @media (min-width: 850px) {
@@ -60,8 +81,7 @@
     font-size: 20px;
   }
   .bag3 h4,
-  .bag4 h4,
-  .testi h4 {
+  .bag4 h4 {
     font-size: 30px;
   }
   .bag3 .accordion-button {
@@ -100,10 +120,29 @@
   .program button {
     font-size: 18px;
   }
+  .program .carousel-indicators button {
+    font-size: 16px;
+  }
   .program .judul {
     font-size: 20px;
   }
+  /* student project */
+  .project h4 {
+    font-size: 30px;
+  }
+  .project .contoh {
+    font-size: 18px;
+  }
+  .project .contoh .nama {
+    font-size: 19px;
+  }
+  .project h5 {
+    font-size: 21px;
+  }
   /* testimoni */
+  .testi h4 {
+    font-size: 30px;
+  }
   .testiBox p {
     font-size: 18px;
   }
@@ -112,6 +151,24 @@
   }
   .testiBox .detail span {
     font-size: 16px;
+  }
+  /* faq */
+  .faq h4 {
+    font-size: 30px;
+  }
+  .faq .accordion-button {
+    font-size: 20px;
+  }
+  .faq .accordion-body {
+    font-size: 18px;
+  }
+  /* footer */
+  .footer .links a {
+    font-size: 16px;
+  }
+  .footer .credit,
+  .footer .credit a {
+    font-size: 15px;
   }
 }
 @media (min-width: 1000px) {
@@ -123,7 +180,8 @@
   }
   /* program */
   .program .contoh .gambar,
-  .program .contoh video {
+  .program .contoh video,
+  .project .contoh video {
     width: 30vw;
     height: calc(0.5625 * 30vw);
   }
@@ -131,15 +189,16 @@
   .program .contoh {
     width: 80vw;
   }
+  /* footer */
+  .footer .links a {
+    margin: 0 20px;
+  }
 }
 @media (min-width: 1440px) {
   /* program */
-  /* .program .carousel-inner {
-    width: 80vw;
-    margin: auto;
-  } */
   .program .contoh .gambar,
-  .program .contoh video {
+  .program .contoh video,
+  .project .contoh video {
     width: 25vw;
     height: calc(0.5625 * 25vw);
   }
@@ -155,6 +214,10 @@
   .program .detail {
     display: flex;
     align-items: flex-start;
+  }
+  /* project */
+  .project .kategori .class {
+    width: 30vw;
   }
 }
 /* LAPTOP BESAR */
@@ -230,19 +293,35 @@
   }
   /* program */
   .program h4 {
-    font-size: 38px;
+    font-size: 35px;
   }
   .program label,
   .program .ket,
   .program button {
     font-size: 23px;
   }
+  .program .carousel-indicators button {
+    font-size: 20px;
+  }
   .program .judul {
     font-size: 25px;
   }
+  /* student project */
+  .project h4 {
+    font-size: 35px;
+  }
+  .project .contoh {
+    font-size: 23px;
+  }
+  .project .contoh .nama {
+    font-size: 24px;
+  }
+  .project h5 {
+    font-size: 26px;
+  }
   /* testimoni */
   .testi h4 {
-    font-size: 38px;
+    font-size: 35px;
   }
   .testiBox p {
     font-size: 23px;
@@ -255,5 +334,23 @@
   }
   swiper-slide {
     width: 400px;
+  }
+  /* faq */
+  .faq h4 {
+    font-size: 35px;
+  }
+  .faq .accordion-button {
+    font-size: 25px;
+  }
+  .faq .accordion-body {
+    font-size: 23px;
+  }
+  /* footer */
+  .footer .links a {
+    font-size: 21px;
+  }
+  .footer .credit,
+  .footer .credit a {
+    font-size: 20px;
   }
 }
