@@ -471,3 +471,19 @@ swiper-slide img {
 .medsos a:hover .btn-floating-ig {
   background: linear-gradient(to right, #833ab4, #c13584);
 }
+/* about */
+.about h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.about p,
+.about .btn {
+  font-size: 15px;
+}
+/* contact */
+.contact h4 {
+  text-shadow: 1px 1px 1px #0096a6;
+}
+.contact p,
+.contact .btn {
+  font-size: 15px;
+}

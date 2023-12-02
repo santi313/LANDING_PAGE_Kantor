@@ -170,6 +170,14 @@
   .footer .credit a {
     font-size: 15px;
   }
+  /* about */
+  .about p,
+  .about .btn {
+    font-size: 18px;
+  }
+  .about h4 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 1000px) {
   /* bag 3 */
@@ -352,5 +360,13 @@
   .footer .credit,
   .footer .credit a {
     font-size: 20px;
+  }
+  /* about */
+  .about p,
+  .about .btn {
+    font-size: 23px;
+  }
+  .about h4 {
+    font-size: 35px;
   }
 }
